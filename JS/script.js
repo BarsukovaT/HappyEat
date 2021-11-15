@@ -19,4 +19,25 @@ function posicionarMenu() {
     }
 }
 
-//
+// LOGIN //
+
+
+function login() {
+
+    var n = document.getElementById("user");
+    var p = document.getElementById("pass");
+
+    if (n.value == "admin" && p.value == "admin") {
+
+        document.getElementById("rojo").style.display = "none";
+        document.getElementById("access").style.display = "none";
+        document.getElementById("perfil").style.display = "block";
+        document.getElementById('user').disabled = "false";
+        document.getElementById('pass').disabled = "false";
+        document.getElementById('pass').disabled = "false";
+
+
+    } else {
+        document.getElementById("rojo").style.display = "block";
+    }
+}

@@ -20,7 +20,7 @@
 
 
 
-    <title>HappyEat - Home</title>
+    <title>HappyEat - Access</title>
 </head>
 
 <body>
@@ -36,10 +36,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li id="access" class="nav-item">
-                    <a class="nav-link" href="login.html" onclick="login()">Acceder</a>
+                    <a class="nav-link" href="#" onclick="login()">Acceder</a>
                 </li>
                 <li id="prefil" class="nav-item dropdown" style="display: none">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Perfil</a>
@@ -70,19 +70,19 @@
     </nav>
 
     <section class="contenido">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quisquam, suscipit atque dolorem quae tempore sapiente dolorum doloribus laudantium inventore, odio voluptate fugiat repudiandae iure provident! Quas incidunt quos aliquid?</p>
-        <br><br><br>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quisquam, suscipit atque dolorem quae tempore sapiente dolorum doloribus laudantium inventore, odio voluptate fugiat repudiandae iure provident! Quas incidunt quos aliquid?</p>
-        <br><br><br>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quisquam, suscipit atque dolorem quae tempore sapiente dolorum doloribus laudantium inventore, odio voluptate fugiat repudiandae iure provident! Quas incidunt quos aliquid?</p>
-        <br><br><br>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quisquam, suscipit atque dolorem quae tempore sapiente dolorum doloribus laudantium inventore, odio voluptate fugiat repudiandae iure provident! Quas incidunt quos aliquid?</p>
-        <br><br><br>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quisquam, suscipit atque dolorem quae tempore sapiente dolorum doloribus laudantium inventore, odio voluptate fugiat repudiandae iure provident! Quas incidunt quos aliquid?</p>
-        <br><br><br>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quisquam, suscipit atque dolorem quae tempore sapiente dolorum doloribus laudantium inventore, odio voluptate fugiat repudiandae iure provident! Quas incidunt quos aliquid?</p>
-        <br><br><br>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quisquam, suscipit atque dolorem quae tempore sapiente dolorum doloribus laudantium inventore, odio voluptate fugiat repudiandae iure provident! Quas incidunt quos aliquid?</p>
+        <form>
+            <div class="form-group">
+                <label for="Usuario">Usuario</label>
+                <input type="text" class="form-control" placeholder="Nombre de Usuario">
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <small id="rojo" class="form-text text-muted">Usuario o contraseña incorrectos.</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Acceder</button>
+        </form>
 
     </section>
 

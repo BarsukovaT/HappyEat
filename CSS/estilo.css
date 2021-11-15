@@ -18,7 +18,7 @@
     height: 150px;
     width: 100%;
     font-family: 'Lobster', cursive;
-    text-align: center
+    text-align: center;
 }
 
 .navi {
@@ -29,7 +29,6 @@
 .contenido {
     height: 2000px;
     width: 100%;
-    padding-top: 20px
 }
 
 .navi li {
@@ -37,7 +36,20 @@
 }
 
 
+/** LOGIN **/
+
+#rojo {
+    visibility: hidden;
+    color: rgb(160, 11, 11);
+    font-weight: bold;
+}
+
+
 /*** WEB ***/
+
+.contenido {
+    padding: 20px 100px;
+}
 
 h1 {
     text-align: center;

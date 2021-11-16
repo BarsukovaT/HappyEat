@@ -32,7 +32,7 @@ function login() {
 
     if (n.value == "admin" && p.value == "admin") {
 
-        document.getElementById("rojo").style.visibility = "hidden";
+        location.href = "file:///C:/xampp/htdocs/HappyEat/index.html";
         document.getElementById("access").style.display = "none";
         document.getElementById("perfil").style.display = "block";
         e1.classList.remove("disabled");

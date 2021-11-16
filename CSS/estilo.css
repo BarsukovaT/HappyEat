@@ -55,9 +55,13 @@ h1 {
     text-align: center;
 }
 
+<<<<<<< HEAD
 
 /*RECETAS*/
 
+=======
+/*RECETAS*/
+>>>>>>> 17ca97575b282b15ee2c48b03ac0deaeaf63b963
 .dish-container {
     display: flex;
 }
@@ -74,18 +78,29 @@ h1 {
     align-items: center;
 }
 
+<<<<<<< HEAD
 .dish-title {}
+=======
+.dish-title {
+
+}
+>>>>>>> 17ca97575b282b15ee2c48b03ac0deaeaf63b963
 
 .dish-image {
     width: 280px;
     height: 180px;
     background-size: cover;
 }
+<<<<<<< HEAD
 
 
 /*END RECETAS*/
 
 
+=======
+/*END RECETAS*/
+
+>>>>>>> 17ca97575b282b15ee2c48b03ac0deaeaf63b963
 /*INICIO PIE*/
 
 #pie {
@@ -147,4 +162,9 @@ h1 {
 }
 
 
+<<<<<<< HEAD
 /*FIN PIE*/
+=======
+/*FIN PIE*/
+
+>>>>>>> 17ca97575b282b15ee2c48b03ac0deaeaf63b963

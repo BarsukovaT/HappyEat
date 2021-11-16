@@ -26,18 +26,20 @@ function login() {
 
     var n = document.getElementById("user");
     var p = document.getElementById("pass");
+    var e1 = document.getElementById("recipe");
+    var e2 = document.getElementById("plan");
+    var e3 = document.getElementById("list");
 
     if (n.value == "admin" && p.value == "admin") {
 
-        document.getElementById("rojo").style.display = "none";
+        document.getElementById("rojo").style.visibility = "hidden";
         document.getElementById("access").style.display = "none";
         document.getElementById("perfil").style.display = "block";
-        document.getElementById('user').disabled = "false";
-        document.getElementById('pass').disabled = "false";
-        document.getElementById('pass').disabled = "false";
-
+        e1.classList.remove("disabled");
+        e2.classList.remove("disabled");
+        e3.classList.remove("disabled");
 
     } else {
-        document.getElementById("rojo").style.display = "block";
+        document.getElementById("rojo").style.visibility = "visible";
     }
 }

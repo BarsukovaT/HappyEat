@@ -1,4 +1,4 @@
-fetch('/JSON/recetas_es.json')
+fetch('JSON/recetas_es.json')
     .then(response => response.json())
     .then(data => {
         let container = document.querySelector('.all_recets');

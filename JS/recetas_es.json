@@ -1,0 +1,86 @@
+{
+  "title": "Recetas",
+  "content": [
+    {
+      "foodCategory": "Rapido y Simple",
+      "dishes": [
+        {
+          "title": "Wok de pollo con verduras",
+          "description": "Descripcion: El wok de pollo con verduras es una de las recetas de pollo más fáciles y rápidas que puedes\n preparar en casa. Te voy a enseñar cómo hacer un wok con pollo con cualquier vegetal que tengas en\n casa.",
+          "image": "IMG/wok_de_pollo_y_verduras.jpg",
+          "ingredients": {
+            "title": "Ingredientes:",
+            "items": [
+              "2 pechugas de pollo medianas",
+              "½ Cebolla",
+              "1 Pimiento rojo",
+              "1 Zanahoria mediana",
+              "1 Cebollino"
+            ]
+          },
+          "calories": "Calorías 350kcal"
+        }
+      ]
+    },
+    {
+      "foodCategory": "Ensaladas",
+      "dishes": [
+        {
+          "title": "Ensalada César de pollo",
+          "description": "Descripcion: Prepara la clásica receta de ensalada César con lechugas variadas, queso y pechuga de\n  pollo.",
+          "image": "IMG/ensalada_cesar_con_pollo.jpg",
+          "ingredients": {
+            "title": "Ingredientes:",
+            "items": [
+              "200 g de lechuga romana picada o una mezcla de lechugas de hoja verde",
+              "100 g Tomates cereza",
+              "150 g de pollo asado, a la plancha o empanado a trozos",
+              "Una taza de costrones de pan",
+              "Taquitos de queso al gusto o queso rallado"
+            ]
+          },
+          "calories": "Calorías 521kcal"
+        },
+        {
+          "title": "Ensalada de atún y aguacate",
+          "description": "Descripcion: Esta rica pasta con champiñones en salsa blanca es una gran alternativa gourmet para\n disfrutar en cualquier época del año, ¡pruébala tú misma!",
+          "image": "IMG/ensalada_de_atun_y_aguacate.jpg",
+          "ingredients": {
+            "title": "Ingredientes:",
+            "items": [
+              "500 g de atún fresco en cubos",
+              "4 pepinillos rebanados"
+            ]
+          },
+          "calories": "Calorías 521kcal"
+        },
+        {
+          "title": "Ensalada de atún y aguacate",
+          "description": "Descripcion: Esta rica pasta con champiñones en salsa blanca es una gran alternativa gourmet para\n disfrutar en cualquier época del año, ¡pruébala tú misma!",
+          "image": "IMG/ensalada_de_atun_y_aguacate.jpg",
+          "ingredients": {
+            "title": "Ingredientes:",
+            "items": [
+              "500 g de atún fresco en cubos",
+              "4 pepinillos rebanados"
+            ]
+          },
+          "calories": "Calorías 521kcal"
+        },
+        {
+          "title": "Ensalada de atún y aguacate",
+          "description": "Descripcion: Esta rica pasta con champiñones en salsa blanca es una gran alternativa gourmet para\n disfrutar en cualquier época del año, ¡pruébala tú misma!",
+          "image": "IMG/ensalada_de_atun_y_aguacate.jpg",
+          "ingredients": {
+            "title": "Ingredientes:",
+            "items": [
+              "500 g de atún fresco en cubos",
+              "4 pepinillos rebanados"
+            ]
+          },
+          "calories": "Calorías 521kcal"
+        }
+      ]
+    }
+  ]
+}

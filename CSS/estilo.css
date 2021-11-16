@@ -55,10 +55,33 @@ h1 {
     text-align: center;
 }
 
-img {
-    width: 250px;
+/*RECETAS*/
+.dish-container {
+    display: flex;
 }
 
+.dish {
+    width: 280px;
+    margin: 10px;
+}
+
+.dish-title-container {
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dish-title {
+
+}
+
+.dish-image {
+    width: 280px;
+    height: 180px;
+    background-size: cover;
+}
+/*END RECETAS*/
 
 /*INICIO PIE*/
 

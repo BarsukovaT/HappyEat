@@ -1,0 +1,19 @@
+.dish_pie{
+    display: flex;
+    padding: 5px 10px;
+    background-color: #f4a20f;
+    width: 46%;
+    justify-content: space-between;
+   
+}
+.dish_image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    position: relative;
+    bottom: 0;
+}
+.main_page{
+
+}

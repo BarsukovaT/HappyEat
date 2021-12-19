@@ -13,7 +13,7 @@
             </ul>
         </div>
         <div class="pright">
-            <a href="#"><img src="img/fb.png" alt="What's App" /></a>
-            <a href="#"><img src="img/insrta.png" alt="Cuenta de Instagram" /></a>
-            <a href="#"><img src="img/twi.png" alt="Cuenta de Twitter" /></a>
+            <a href="#"><img src="IMG/fb.png.png" alt="What's App" /></a>
+            <a href="#"><img src="IMG/insrta.png" alt="Cuenta de Instagram" /></a>
+            <a href="#"><img src="IMG/twi.png" alt="Cuenta de Twitter" /></a>
         </div>

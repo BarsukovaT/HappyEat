@@ -18,7 +18,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <!--PROPIOS-->
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
     <script src="js/script.js"></script>
 
 

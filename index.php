@@ -23,7 +23,9 @@ session_start();
 
     <!--PROPIOS-->
     <link rel="stylesheet" href="CSS/estilo.css">
+
     <script src="JS/script.js"></script>
+
 
     <title>HappyEat - Home</title>
 

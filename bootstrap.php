@@ -1,8 +1,9 @@
+
 <?php
 $id_receta = $_GET["id_receta"];
 $email_usuario = $_POST['email_usuario'];
 //$id_usuario = ;
-require "./PHP/conexion_be.php";
+require ("./PHP/conexion_be.php");
 $receta = "SELECT * FROM recetas WHERE id_recetas = " . $id_receta;
 $query_receta = mysqli_query($conexion, $receta);
 $array_datos = mysqli_fetch_array($query_receta);
@@ -39,23 +40,28 @@ $img = $array_datos["img"];
 <link rel="stylesheet" href="CSS/stilo.css">
 <link rel="stylesheet" href="CSS/estilo_dish.css">
 <link rel="stylesheet" href="CSS/font-awesome.css">
+
 <link rel="stylesheet" href="CSS/font-awesome.min.css">
 <link rel="stylesheet" href="FONTS/fontawesome-webfont.eot">
 <link rel="stylesheet" href="FONTS/fontawesome-webfont.svg">
 <link rel="stylesheet" href="FONTS/fontawesome-webfont.ttf">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+
     <title><?php echo $titulo;?></title>
+
 </head>
 <body>
 <?php
         include ("cabecera.php");
         ?>
+
 <!-- preview container -->
 
 <div class="card"  style= "background-image: url('IMG/<?php echo $img; ?>'); width: 100%; height: 400px; padding: 30px; background-size: cover;">
@@ -157,42 +163,20 @@ $img = $array_datos["img"];
         
             <h2>Elaboración</h2> 
             <?php echo $elaboracion;?>
-            <!--<h5>El caldo de pollo</h5> 
-            <ol>
-                <li><p>Vamos a hacer el caldo de pollo como las madres, sin medidas exactas y al estilo con lo que tengamos. Que no tienes carcasas de pollo, pero sí un cuarto, ¡a la cazuela! Luego podrás hacer unas estupendas croquetas con lo que salga.
-                </p></li>
-                <li><p>
-                Llena tu olla exprés con abundante agua fría. Pon un hueso de jamón, unas carcasas de pollo, la parte verde de un puerro, una patata, una zanahoria y una pizca de sal. Cuece a fuego medio con la olla abierta. Cuando veas que empieza a generar espuma con las impurezas —importantísimo—, retírala con un cucharón. Cuando ya no salga más espuma, cierra la olla, y mantén cociendo a fuego medio durante unos 15 minutos. </p>
-                </p></li>
-                <li><p>Aparta la olla del fuego. Espera a que baje la válvula de presión. Quita la tapa y deja cocer a fuego medio unos 5-10 minutos más. Cuélalo y listo para usar.
-                </p></li>
-            </ol>
-            <h5>El arroz con pollo y verduras</h5>
-            <ol>
-                <li><p>Precalienta el horno a 200ºC, calor arriba y abajo.</p></li>
-                <li><p>Pon la sartén mediana con el aceite de oliva virgen extra al fuego.</p></li>
-                <li><p>Echa un poco de sal al pollo y al cerdo. Cuando el aceite esté caliente echa el pollo, fríelo y cuando esté listo, retíralo a un plato. Haz lo mismo con el cerdo.</p></li>
-                <li><p>Trocea la cebolla y el ajo en dados muy pequeños.</p></li>
-                <li><p>Pela el tomate y trocéalo también o rállalo, si lo prefieres.</p></li>
-                <li><p>Sofríe el ajo y la cebolla en el mismo aceite de la carne. Cuando veas que están ya sofritos —la cebolla se pondrá transparente, ten cuidado de que no se queme—, añade el tomate.</p></li>
-                <li><p>Trocea las judías verdes. Quita las hojas exteriores de las alcachofas, dejando el corazón, corta el tallo, pélalo y trocéalo —#AquíNoSeTiraNada—. Incorpora las verduras y remueve bien para que se sofría todo.</p></li>
-                <li><p>Cuando pasen unos 2 o 3 minutos, incorpora la carne de cerdo y el pollo.</p></li>
-                <li><p>Añade el caldo de pollo caliente. Rectifica de sal y pon a cocer.</p></li>
-                <li><p>Cuando lleve unos 5 minutos en la sartén a fuego fuerte, añade el arroz. Sigue con el fuego fuerte durante 5 minutos. Baja el fuego y deja otros 5 minutos más. Total: 10 minutos en el fuego desde que echas el arroz.</p></li>
-                <li><p>Pásalo al horno y déjalo 4 o 5 minutos más.</p></li>
-                <li><p>Saca del horno y deja reposar unos 10 minutos antes de servir.</p></li>
-            </ol>
--->
+            
 
 
         </div>
+
     </div>
 </div>
         <!--pie-->
 
 <div id="pie"><?php include "footer.php" ?></div>
 
+
 <script src="js/favoritos.js" ></script>
+
 <script>
     function emitEvent(el, old, current) {
         let event = new CustomEvent('personasChange', {

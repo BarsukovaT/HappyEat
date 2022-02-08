@@ -1,5 +1,5 @@
 .main{  
-    background-color: #f4a20f;
+    
     border: 2px solid black;
     flex-direction: column;
     width: 100%;
@@ -18,15 +18,16 @@
     height: 85px;
 }
 .plato_descripcion{
-    background-color: #df9ab6;
+    background-color: #ec76a5;
     border: 2px solid black;
     flex: 1;
     height: 250px;
 }
 .ingredientes{
     background-color: #d1e65b;
-    border: 2px solid black;
+   
     flex: 2;
+    font-size: 20px;
 }
 .como_preparar{
     background-color: #676f70;
@@ -34,7 +35,7 @@
     height: 250px;
 }
 .footer{
-    background-color: #ee7a44;
+    background-color: #a1f09a;
     border: 2px solid black;
     height: 80px;
 }

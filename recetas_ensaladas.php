@@ -30,6 +30,7 @@ include "php/no_sesion.php";
 </head>
 
 <body>
+    
     <header class="header"></header>
 
     <nav class="navbar navbar-expand-lg navbar-dark navi">
@@ -78,7 +79,10 @@ include "php/no_sesion.php";
             <h2>¡Disfruta de las ENSALADAS de <spam class="empresa"> HappyEat!</spam></h2>
                 <br><br><br>
         
-            
+                <?php
+  
+  echo $_SESSION['usuario'];
+  ?>
             <div class="tabla">
     
                 <?php

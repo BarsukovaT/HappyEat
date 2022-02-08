@@ -5,7 +5,6 @@
 }
 
 body {
-    /*background-color: rgb(160, 248, 160);*/
     background-image: url(../IMG/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -169,6 +168,22 @@ main {
     display: none;
 }
 
+.formulario_register i {
+    color: red;
+    padding-top: 10px;
+    font-size: 13px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.forumlario_login i {
+    color: red;
+    font-size: 13px;
+    padding-top: 10px;
+    position: absolute;
+    visibility: hidden;
+}
+
 
 /*DISEÑO RESPONSIVE - FORMULARIOS*/
 
@@ -218,12 +233,73 @@ main {
     text-decoration: underline;
 }
 
-h1 {
+.empresa {
+    font-size: 35px;
+    font-weight: bolder;
+    color: rgb(46, 139, 87);
+    -webkit-text-stroke: 1px rgb(13, 73, 13);
+}
+
+.texto h1 {
     text-align: center;
+    text-decoration: underline;
+    font-size: 35px;
+    font-weight: bolder;
+    color: rgb(46, 139, 87);
+    -webkit-text-stroke: 1px rgb(13, 73, 13);
 }
 
 
-/*RECETAS*/
+/* CARRUSEL */
+
+.carousel {
+    border: 2px solid rgb(46, 139, 87);
+    margin: 2em 15em;
+    border-radius: 1%;
+}
+
+.titulo_plato {
+    color: black;
+    font-weight: bold;
+}
+
+.texto2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgb(46, 139, 87);
+    border-radius: 100%;
+}
+
+h2 a {
+    color: rgb(46, 139, 87);
+}
+
+h2:hover a {
+    cursor: pointer;
+    transition: all 700ms;
+    color: rgb(20, 104, 56);
+    text-shadow: 0 0 30px rgb(46, 139, 87);
+}
+
+
+/* TABLA RECETAS */
+
+.table_recipes th {
+    font-size: 22px;
+    ;
+}
+
+.table_recipes td {
+    font-size: 20px;
+    ;
+}
+
+.table_recipes img {
+    width: 200px;
+    height: 135px;
+}
+
+
+/*RECETAS????*/
 
 .dish-container {
     display: flex;
@@ -251,7 +327,87 @@ h1 {
 }
 
 
-/*END RECETAS*/
+/*END RECETAS?????*/
+
+
+/*PLANIFICADOR*/
+
+.btn_menu {
+    display: block;
+    margin: 35px auto;
+    width: 150px;
+    height: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    border: 3px solid rgb(46, 139, 87);
+    box-shadow: inset 0 0 0 0 rgb(46, 139, 87);
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.btn_menu:hover {
+    box-shadow: inset 150px 0 0 0 rgb(46, 139, 87);
+    cursor: pointer;
+    color: white;
+}
+
+.calculator {
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: center;
+    width: 80%;
+    font-size: 18px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.calculator img {
+    width: 200px;
+    height: 135px;
+}
+
+.calculator td,
+th {
+    word-wrap: break-word;
+    width: 20%;
+    max-width: 20%;
+}
+
+.calculator thead tr {
+    background-color: rgb(46, 139, 87);
+    color: white;
+    font-weight: bold;
+}
+
+.calculator td,
+th {
+    align-content: center;
+    padding: 12px 15px;
+}
+
+.calculator tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.calculator tbody tr:nth-of-type(even) {
+    background-color: #ccc7c7c2;
+}
+
+.calculator tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(46, 139, 87);
+}
+
+.calculator th {
+    text-decoration: underline;
+}
+
+.kcal {
+    font-size: 30px;
+}
 
 
 /*INICIO PIE*/
@@ -313,7 +469,16 @@ h1 {
     width: 45px;
     height: 45px;
 }
-
+.receta_image {
+    width: auto;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: 300px 100px;
+}
+.card{
+    background-repeat: inherit ;
+    background-size: 300px 100px;
+}
 
 
 .class_1{

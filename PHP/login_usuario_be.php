@@ -2,13 +2,13 @@
 
     session_start();
 
-    include "conexion_be.php";
+    require "conexion_be.php";
 
-    $email = $_POST['email'];
-    $pass = $_POST['pass'];
+    $email = $_POST['email_usuario'];
+    $pass = $_POST['pass_usuario'];
 
 
-    $validar_login = mysqli_query($conexion, "SELECT * FROM usuarios WHERE email = '$email' and pass = '$pass'");
+    $validar_login = mysqli_query($conexion, "SELECT * FROM usuarios WHERE email_usuario = '$email' and pass_usuario = '$pass'");
 
     if(mysqli_num_rows($validar_login)> 0){
         $_SESSION['usuario'] = $email;
@@ -19,7 +19,7 @@
 
     else{
         echo '<script>
-                alert("Ese usuario no existe");
+                alert("Usuario o contraseña incorrectos.");
                 window.location = "../login.php";
             </script>';
         mysqli_close($conexion);

@@ -8,6 +8,7 @@
 
     <!--BOOSTRAP-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -15,7 +16,7 @@
     <!--PROPIOS-->
     <link rel="stylesheet" href="CSS/estilo.css">
     <script src="JS/script.js"></script>
-
+<div>
 
 
     <title>HappyEat - Access</title>
@@ -33,30 +34,30 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php">Home</a>
+                    <a class="bi bi-house-door nav-link" href="index.php"> Home</a>
                 </li>
                 <li id="access" class="nav-item active">
-                    <a class="nav-link" href="#">Acceder</a>
+                    <a class="bi bi-key nav-link" href="#"> Acceder</a>
                 </li>
                 <li id="perfil" class="nav-item dropdown" style="display: none">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Perfil</a>
+                    <a class="bi bi-person-circle nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Perfil</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Favoritos</a>
-                        <a class="dropdown-item" href="#">Desconectar</a>
+                        <a class="bi bi-star dropdown-item" href="#"> Favoritos</a>
+                        <a class="bi bi-lock dropdown-item" href="#"> Desconectar</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a id="recipe" class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recetas</a>
+                    <a id="recipe" class="bi bi-receipt-cutoff nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Recetas</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="recetas_saludables.html">Saluables</a>
-                        <a class="dropdown-item" href="#">De la comunidad</a>
+                        <a class="bi bi-heart dropdown-item" href="recetas_saludables.html"> Saluables</a>
+                        <a class="bi bi-people dropdown-item" href="#"> De la comunidad</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a id="plan" class="nav-link disabled" href="#">Planificador</a>
+                    <a id="plan" class="bi bi-calendar3  nav-link disabled" href="planificador.php"> Planificador</a>
                 </li>
                 <li class="nav-item">
-                    <a id="list" class="nav-link disabled" href="#">Lista</a>
+                    <a id="list" class="bi bi-basket nav-link disabled" href="#"> Lista</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -91,8 +92,9 @@
 
                     <form action="php/login_usuario_be.php" method= "POST" class="forumlario_login">
                         <h2>Iniciar Sesion</h2>
-                        <input type="email" placeholder="E-Mail" name="email">
-                        <input type="password" placeholder="Contraseña" name="pass">
+                        <input type="email" placeholder="E-Mail" name="email_usuario">
+                        <input type="password" placeholder="Contraseña" name="pass_usuario">
+                        <i>Usuario o contraseña incorrectos.</i>
                         <button>Entrar</button>
                     </form>
 
@@ -100,10 +102,11 @@
 
                     <form id = "f_registro" action="php/registro_usuario_be.php" method="POST" class="formulario_register">
                         <h2>Registrarse</h2>
-                        <input  id ="n_completo" type="text" placeholder="Nombre Completo" name="nombre_completo">
-                        <input  id ="correo" type="email" placeholder="E-Mail" name="email">
-                        <input  id ="user" type="text" placeholder="Usuario" name="usuario">
-                        <input required id ="con" type="password" placeholder="Contraseña" name = "pass">
+                        <input  id ="n_completo" required type="text" placeholder="Nombre Completo *" name="nombre_usuario">
+                        <input  id ="correo" required type="email" placeholder="E-Mail *" name="email_usuario">
+                        <input  id ="user" required type="text" placeholder="Usuario *" name="user_usuario">
+                        <input  id ="con" required type="password" placeholder="Contraseña *" name = "pass_usuario">
+                        <i id="alerta">Por favor, rellene todos los campos para completar el registro.</i>
                         <button id="reg" onclick = 'validarFormulario()' name="registrar">Registrarse</button>
                     </form>
 
@@ -116,25 +119,9 @@
     </section>
 
     <footer id="pie">
-        <div class="pleft">
-            <h3>Contactacta con Nosotros</h3>
-            <p>Calle Digital Nº38</p>
-            <p>29008 Málaga</p>
-            <p><a href="mailto:correo@correo_ejemplo.com?subject=Saludos&cc=correo2correo_ejemplo.com">Empresa@grupo.es</a></p>
-            <p>Tlf: 699 88 00 77</p>
-        </div>
-        <div class="pcenter">
-            <ul>
-                <li><a href="#">Politica de cookies</a></li>
-                <li><a href="#">Politica de privacidad</a></li>
-                <li><a href="#">Aviso legal</a></li>
-            </ul>
-        </div>
-        <div class="pright">
-            <a href="#"><img src="img/fb.png" alt="What's App" /></a>
-            <a href="#"><img src="img/insrta.png" alt="Cuenta de Instagram" /></a>
-            <a href="#"><img src="img/twi.png" alt="Cuenta de Twitter" /></a>
-        </div>
+    <?php
+        include "php/footer.php";
+        ?>
     </footer>
 
 </body>

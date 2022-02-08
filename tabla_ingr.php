@@ -2,7 +2,9 @@
        <?php
        $conexion = mysqli_connect("localhost", "root", "", "happyeat");
 
-       $recept= mysqli_query($conexion, "SELECT * FROM `recetas_ingredientes` INNER JOIN ingredientes on recetas_ingredientes.id_ingredientes=ingredientes.id_ingredientes WHERE id_receta =1;");
+
+       $recept= mysqli_query($conexion, "SELECT * FROM `recetas_ingredientes` INNER JOIN ingredientes on recetas_ingredientes.id_ingredientes=ingredientes.id_ingredientes WHERE id_receta =$id_receta;");
+
       
        if(mysqli_num_rows($recept) > 0){
           while ($row = mysqli_fetch_assoc($recept)){
